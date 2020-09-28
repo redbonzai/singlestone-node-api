@@ -28,7 +28,7 @@ For example, in the `App/Config/dev.env: `
 ```
 MONGODB_URI=mongodb+srv://<username>:<password>@redbonzaicluster.pe7qd.mongodb.net/<dbname>?retryWrites=true&w=majority
 ```
- - It would be the same in the `dev.test` env file, except, the database would change.
+ - It would be the same in the `test.env` env file, except, the database would change.
 ---
 ### The Postman Collection below
 > Click the button below to access the Singlestone Node API Postman Collection.
