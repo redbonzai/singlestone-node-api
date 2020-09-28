@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "env-cmd ./App/config/dev.env nodemon -r esm index.js",
-    "test": "jest"
+    "test": "env-cmd ./App/config/test.env jest"
   },
   "author": "",
   "license": "ISC",
