@@ -10,12 +10,6 @@ export const contactValidator = (res, req, next) => {
 			max: 32
 		})
 
-	req.check('password', 'Password is required').notEmpty()
-		.isLength({min: 6})
-		.withMessage('Password must contain at least 6 characters')
-		.matches(/\d/)
-		.withMessage('Password must contain a number')
-
 	req.check('address.street', 'Street and street number are required').notEmpty()
 	req.check('address.city', 'City is required in an address').notEmpty()
 	req.check('address.state', 'State is required in an address').notEmpty()
